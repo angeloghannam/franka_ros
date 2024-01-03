@@ -7,6 +7,32 @@
 # Paolo Robuffo Giordano, Alessandro de Luca
 link0:
   origin:
+    xyz: 0 0 0
+    rpy: 0 0 0
+  mass: 100
+  inertia:
+    xx: 0.00315
+    yy: 0.00388
+    zz: 0.004285
+    xy: 8.2904E-07
+    xz: 0.00015
+    yz: 8.2299E-06
+    
+link1:
+  origin:
+    xyz: 0 0 0
+    rpy: 0 0 0
+  mass: 1
+  inertia:
+    xx: 1.2516e-02
+    yy: 1.0027e-02
+    zz: 4.8150e-03
+    xy: -4.2800e-04
+    xz: -1.1960e-03
+    yz: -7.4100e-04    
+    
+link2:
+  origin:
     xyz: -0.041018 -0.00014 0.049974
     rpy: 0 0 0
   mass: 0.629769
@@ -17,8 +43,9 @@ link0:
     xy: 8.2904E-07
     xz: 0.00015
     yz: 8.2299E-06
+    
 
-link1:
+link3:
   origin:
     xyz: 0.003875 0.002081 -0.04762
     rpy: 0 0 0
@@ -31,7 +58,7 @@ link1:
     xz: 0.0067720
     yz: 0.019169
 
-link2:
+link4:
   origin:
     xyz:  -0.003141 -0.02872  0.003495
     rpy: 0 0 0
@@ -44,7 +71,7 @@ link2:
     xz: 1.0254e-02
     yz: 7.0400e-04
 
-link3:
+link5:
   origin:
     xyz: 2.7518e-02 3.9252e-02 -6.6502e-02
     rpy: 0 0 0
@@ -57,7 +84,7 @@ link3:
     xz: -1.1396e-02
     yz: -1.2805e-02
 
-link4:
+link6:
   origin:
     xyz: -5.317e-02 1.04419e-01 2.7454e-02
     rpy: 0 0 0
@@ -70,7 +97,7 @@ link4:
     xz: -1.3320e-03
     yz: 8.6410e-03
 
-link5:
+link7:
   origin:
     xyz: -1.1953e-02 4.1065e-02 -3.8437e-02
     rpy: 0 0 0
@@ -83,7 +110,7 @@ link5:
     xz: -4.0370e-03
     yz: 2.2900e-04
 
-link6:
+link8:
   origin:
     xyz: 6.0149e-02 -1.4117e-02 -1.0517e-02
     rpy: 0 0 0
@@ -96,7 +123,7 @@ link6:
     xz: -1.1580e-03
     yz: 3.4100e-04
 
-link7:
+link9:
   origin:
     xyz: 1.0517e-02 -4.252e-03 6.1597e-02
     rpy: 0 0 0
@@ -108,6 +135,7 @@ link7:
     xy: -4.2800e-04
     xz: -1.1960e-03
     yz: -7.4100e-04
+    
 
 hand:
   origin:

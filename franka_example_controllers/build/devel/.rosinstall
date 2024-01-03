@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ecn/catkin_ws/src/franka_ros/franka_example_controllers/build/devel/setup.sh

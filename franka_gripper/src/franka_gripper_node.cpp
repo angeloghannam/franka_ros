@@ -60,7 +60,7 @@ using franka_gripper::updateGripperState;
 int main(int argc, char** argv) {
   ros::init(argc, argv, "franka_gripper_node");
   ros::NodeHandle node_handle("~");
-  std::string robot_ip;
+  std::string robot_ip = "fci-ip";
   if (!node_handle.getParam("robot_ip", robot_ip)) {
     ROS_ERROR("franka_gripper_node: Could not parse robot_ip parameter");
     return -1;
