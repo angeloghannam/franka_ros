@@ -30,6 +30,7 @@ find_package(Franka 0.9.0 QUIET)
 if(NOT Franka_FOUND)
   find_package(Franka 0.8.0 REQUIRED)
 endif()
+find_package(std_msgs REQUIRED)
 
 # merge Franka + INCLUDE_DIRS in topological order
 list_insert_in_workspace_order(catkin_INCLUDE_DIRS ${Franka_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
@@ -50,7 +51,7 @@ generate_dynamic_reconfigure_options(
 
 catkin_package(
   INCLUDE_DIRS include
-  LIBRARIES franka_example_controllers
+  LIBRARIES franka_example_controllers 
   CATKIN_DEPENDS
     controller_interface
     dynamic_reconfigure
@@ -110,6 +111,7 @@ target_include_directories(franka_example_controllers PUBLIC
 add_executable(teleop_gripper_node
   src/teleop_gripper_node.cpp
 )
+
 target_include_directories(teleop_gripper_node PUBLIC
   ${catkin_INCLUDE_DIRS}
 )
@@ -124,6 +126,17 @@ add_dependencies(teleop_gripper_node
   ${PROJECT_NAME}_gencpp
   ${PROJECT_NAME}_gencfg
 )
+
+
+add_executable(first_controller
+    src/first_controller.cpp)
+
+target_include_directories(first_controller PUBLIC ${catkin_INCLUDE_DIRS})
+
+target_link_libraries(first_controller PUBLIC
+  ${catkin_LIBRARIES}
+)
+
 
 ## Installation
 install(TARGETS franka_example_controllers

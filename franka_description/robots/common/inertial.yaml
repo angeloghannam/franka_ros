@@ -4,7 +4,7 @@
 # PandaRobot With Retrieval of Feasible Parameters Using
 # Penalty-Based Optimization
 # by: Claudio Gaz, Marco Cognetti, Alexander Oliva,
-# Paolo Robuffo Giordano, Alessandro de Luca
+# Paolo Robuffo Giordano, Alessandro de Luca  
 link0:
   origin:
     xyz: -0.041018 -0.00014 0.049974
@@ -108,6 +108,32 @@ link7:
     xy: -4.2800e-04
     xz: -1.1960e-03
     yz: -7.4100e-04
+    
+link8:
+  origin:
+    xyz: 0 0 0
+    rpy: 0 0 0
+  mass: 100
+  inertia:
+    xx: 0.00315
+    yy: 0.00388
+    zz: 0.004285
+    xy: 8.2904E-07
+    xz: 0.00015
+    yz: 8.2299E-06
+    
+link9:
+  origin:
+    xyz: 0 0 0
+    rpy: 0 0 0
+  mass: 1
+  inertia:
+    xx: 1.2516e-02
+    yy: 1.0027e-02
+    zz: 4.8150e-03
+    xy: -4.2800e-04
+    xz: -1.1960e-03
+    yz: -7.4100e-04    
 
 hand:
   origin:

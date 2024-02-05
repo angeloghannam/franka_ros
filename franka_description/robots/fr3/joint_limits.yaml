@@ -46,3 +46,17 @@ joint7:
     upper:      2.6895
     velocity:   3.00
     effort:    12.0
+    
+joint8:
+  limit:
+    lower:     -1.0000
+    upper:      1.0000
+    velocity:   1.00
+    effort:    12.0
+
+joint9:
+  limit:
+    lower:     0
+    upper:     0
+    velocity:   0
+    effort:   0

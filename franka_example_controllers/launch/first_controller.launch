@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<launch>
+  <node name="first_controller" type="first_controller" pkg="franka_example_controllers" output="screen" />
+</launch>

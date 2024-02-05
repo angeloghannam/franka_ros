@@ -14,7 +14,7 @@
           rpy="0 0 ${-pi/4}"
           tcp_xyz="${tcp_xyz}"
           tcp_rpy="${tcp_rpy}"
-          connected_to="${arm_id}_link8"
+          connected_to="${arm_id}_link10"
           safety_distance="0.03"
           gazebo="${gazebo}"
        />
@@ -36,33 +36,33 @@
       </xacro:if>
 
       <xacro:gazebo-joint joint="${arm_id}_joint1" transmission="hardware_interface/PositionJointInterface" />
-      <xacro:gazebo-joint joint="${arm_id}_joint2" transmission="hardware_interface/PositionJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint3" transmission="hardware_interface/PositionJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint4" transmission="hardware_interface/PositionJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint5" transmission="hardware_interface/PositionJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint6" transmission="hardware_interface/PositionJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint7" transmission="hardware_interface/PositionJointInterface" />
+      <xacro:gazebo-joint joint="${arm_id}_joint8" transmission="hardware_interface/PositionJointInterface" />
 
       <xacro:gazebo-joint joint="${arm_id}_joint1" transmission="hardware_interface/VelocityJointInterface" />
-      <xacro:gazebo-joint joint="${arm_id}_joint2" transmission="hardware_interface/VelocityJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint3" transmission="hardware_interface/VelocityJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint4" transmission="hardware_interface/VelocityJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint5" transmission="hardware_interface/VelocityJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint6" transmission="hardware_interface/VelocityJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint7" transmission="hardware_interface/VelocityJointInterface" />
+      <xacro:gazebo-joint joint="${arm_id}_joint8" transmission="hardware_interface/VelocityJointInterface" />
 
       <xacro:gazebo-joint joint="${arm_id}_joint1" transmission="hardware_interface/EffortJointInterface" />
-      <xacro:gazebo-joint joint="${arm_id}_joint2" transmission="hardware_interface/EffortJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint3" transmission="hardware_interface/EffortJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint4" transmission="hardware_interface/EffortJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint5" transmission="hardware_interface/EffortJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint6" transmission="hardware_interface/EffortJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint7" transmission="hardware_interface/EffortJointInterface" />
+      <xacro:gazebo-joint joint="${arm_id}_joint8" transmission="hardware_interface/EffortJointInterface" />
 
       <xacro:transmission-franka-state arm_id="${arm_id}" />
       <xacro:transmission-franka-model arm_id="${arm_id}"
          root="${arm_id}_joint1"
-         tip="${arm_id}_joint8"
+         tip="${arm_id}_joint10"
        />
 
       <xacro:if value="${hand}">
