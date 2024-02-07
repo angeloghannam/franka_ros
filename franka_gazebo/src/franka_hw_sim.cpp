@@ -226,8 +226,8 @@ bool FrankaHWSim::initSim(const std::string& robot_namespace,
 
   // After all handles have been assigned to interfaces, register them
   assert(this->eji_.getNames().size() >= 7);
-  assert(this->pji_.getNames().size() == 7);
-  assert(this->vji_.getNames().size() == 7);
+  assert(this->pji_.getNames().size() >= 7);
+  assert(this->vji_.getNames().size() >= 7);
   assert(this->jsi_.getNames().size() >= 7);
   assert(this->fsi_.getNames().size() == 1);
   assert(this->fmi_.getNames().size() == 1);

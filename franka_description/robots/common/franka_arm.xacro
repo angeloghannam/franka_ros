@@ -10,16 +10,19 @@
     <xacro:unless value="${not connected_to}">
       <joint name="${arm_id}_joint_${connected_to}" type="fixed">
         <parent link="${connected_to}"/>
-        <child link="${arm_id}_link0"/>
+        <child link="${arm_id}_link8"/>
         <origin rpy="${rpy}" xyz="${xyz}"/>
       </joint>
     </xacro:unless>
+
+		
 
     <xacro:link_with_sc name="link8" gazebo="${gazebo}">
       <self_collision_geometries>
         <xacro:collision_capsule xyz="-0.075 0 0.06" direction="x" radius="${0.06+safety_distance}" length="0.03" />
       </self_collision_geometries>
     </xacro:link_with_sc>
+    
     
     <xacro:link_with_sc name="link9" gazebo="${gazebo}">
       <self_collision_geometries>
